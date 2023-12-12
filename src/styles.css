@@ -1,9 +1,90 @@
 :root {
   --primary-font: "Poppins", sans-serif;
+  --whitish-color: #fcfefe;
+  --blackish-color: #272044;
 }
 
-h1 {
+body {
+  background-color: var(--blackish-color);
   font-family: var(--primary-font);
+}
+/*target container div, maximum width of website itself */
+.container {
+  max-width: 1400px;
+  /*centers contents of website*/
+  margin: 0 auto;
+}
+/*target header, hero */
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("../images/OverviewPhil.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+  color: var(--whitish-color);
+  padding: 200px 0;
+}
+
+header h1 {
+  font-weight: 700;
   font-size: 96px;
-  line-height: 144px;
+  line-height: 1.5;
+  /*set each margin to 0 b/c by default they have some margin */
+  /*this will make the h1 h2 h3 a in header closer together in spacing */
+  margin: 0;
+}
+
+header h2 {
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+header h3 {
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 1.5;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  margin: 0;
+}
+
+header a {
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-size: 14px;
+  background-color: var(--whitish-color);
+  color: var(--blackish-color);
+  text-decoration: none;
+  /* 16 on top and bottom and 32 on sides */
+  padding: 16px 32px;
+  margin-top: 32px;
+  /*in line element so margin did not work, use this hack to be able to use margin for spacing */
+  display: inline-block;
+}
+
+@media (max-width: 800px) {
+  header {
+    padding: 60px 0;
+  }
+
+  header h1 {
+    font-size: 48px;
+  }
+
+  header h2 {
+    font-size: 20px;
+  }
+
+  header h3 {
+    font-size: 12px;
+  }
+
+  header a {
+    font-size: 7px;
+    padding: 8px 16px;
+  }
 }
