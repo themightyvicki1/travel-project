@@ -78,6 +78,8 @@ footer {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  grid-gap: 64px;
+  padding-left: 20px;
 }
 
 footer h3 {
