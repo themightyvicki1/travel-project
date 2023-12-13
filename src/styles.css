@@ -2,11 +2,13 @@
   --primary-font: "Poppins", sans-serif;
   --whitish-color: #fcfefe;
   --blackish-color: #272044;
+  --secondary-color: #f8f8f8;
 }
 
 body {
   background-color: var(--blackish-color);
   font-family: var(--primary-font);
+  max-width: 1400px;
 }
 /*target container div, maximum width of website itself */
 .container {
@@ -90,10 +92,65 @@ main h3 {
   /*to fix the spacing, brings h3 and h2 closer together */
   margin: 0;
 }
+
+main h4 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1;
+  color: var(--blackish-color);
+  margin: 0;
+}
+
+main h5 {
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 1;
+  margin: 0;
+}
+
 section {
-  max-width: 1200px;
+  max-width: 100%;
   margin: 0 auto;
   padding: 100px;
+}
+
+.secondary {
+  background-color: var(--secondary-color);
+}
+
+.centered-text {
+  text-align: center;
+}
+
+.three-col-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 30px;
+}
+
+.card {
+  /*this color will show behind each card */
+  background-color: var(--whitish-color);
+  /* card should have margin top and bottom for space*/
+  margin: 30px 0;
+}
+
+/*to be able to add some padding around the words in the card and not around the image*/
+.card-body {
+  padding: 30px;
+}
+
+.button {
+  display: block;
+  color: var(--whitish-color);
+  font-weight: 700;
+  font-size: 14px;
+  text-align: center;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  background-color: var(--blackish-color);
+  padding: 16px;
+  text-decoration: none;
 }
 
 footer {
@@ -205,5 +262,15 @@ footer p {
 
   .grid h2 {
     margin-bottom: 10px;
+  }
+
+  .three-col-grid {
+    padding: 0;
+    grid-gap: 5px;
+    grid-template-columns: 1fr;
+  }
+
+  .secondary {
+    padding: 30px;
   }
 }
