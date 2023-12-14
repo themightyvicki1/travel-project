@@ -140,6 +140,17 @@ section {
   padding: 30px;
 }
 
+.card-header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 0px;
+}
+
+.embed {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+}
+
 .button {
   display: block;
   color: var(--whitish-color);
@@ -272,5 +283,10 @@ footer p {
 
   .secondary {
     padding: 30px;
+  }
+
+  .card-header {
+    grid-template-columns: 1fr;
+    grid-gap: 5px;
   }
 }
