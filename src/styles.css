@@ -236,6 +236,9 @@ footer p {
 
 /* targeting changes for when screen is smaller, responsive */
 @media (max-width: 960px) {
+  body {
+    margin: 0;
+  }
   header {
     padding: 60px 0;
   }
