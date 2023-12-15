@@ -8,6 +8,7 @@
 body {
   background-color: var(--blackish-color);
   font-family: var(--primary-font);
+  margin: 0 100px;
 }
 
 /*target header, hero */
@@ -226,6 +227,11 @@ footer p {
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 10px;
   margin: 30px;
+}
+
+.my-photos-grid img:hover {
+  transform: scale(1.5);
+  cursor: zoom-in;
 }
 
 /* targeting changes for when screen is smaller, responsive */
