@@ -109,6 +109,25 @@ section {
   padding: 100px;
 }
 
+table {
+  border: 5px solid var(--blackish-color);
+  border-radius: 10px;
+  padding: 15px;
+  /*centers entire table */
+  margin: 0 auto;
+  color: var(--blackish-color);
+  text-align: left;
+}
+
+table thead {
+  text-decoration: underline;
+}
+
+table th {
+  margin: 0 auto;
+  width: 25%;
+}
+
 footer {
   display: grid;
   grid-template-columns: 1fr 2fr 2fr;
@@ -229,9 +248,21 @@ footer p {
   margin: 30px;
 }
 
+.my-photos-grid img {
+  filter: contrast(1.3) brightness(1);
+}
+
 .my-photos-grid img:hover {
   transform: scale(1.5);
   cursor: zoom-in;
+}
+
+.third-section {
+  background-color: var(--secondary-color);
+}
+
+#section-three-headings {
+  margin-bottom: 50px;
 }
 
 /* targeting changes for when screen is smaller, responsive */
@@ -315,6 +346,22 @@ footer p {
 
   .card-header img {
     display: none;
+  }
+
+  /*makes the table responsive*/
+  .table-container {
+    overflow-x: auto;
+  }
+  table {
+    padding: 20px;
+  }
+
+  table thead {
+    font-size: 14px;
+  }
+
+  table tbody {
+    font-size: 10px;
   }
 
   iframe.embed {
