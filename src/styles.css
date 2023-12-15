@@ -8,7 +8,7 @@
 body {
   background-color: var(--blackish-color);
   font-family: var(--primary-font);
-  max-width: 1400px;
+  padding: 0 300px;
 }
 
 /*target header, hero */
@@ -222,8 +222,18 @@ footer p {
   text-decoration: none;
 }
 
+.my-photos-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 10px;
+  margin: 30px;
+}
+
 /* targeting changes for when screen is smaller, responsive */
 @media (max-width: 960px) {
+  body {
+    padding: 0;
+  }
   header {
     padding: 60px 0;
   }
@@ -267,6 +277,12 @@ footer p {
     font-size: 12px;
   }
 
+  footer {
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+    margin: 0;
+  }
+
   .grid {
     grid-template-columns: 1fr;
     grid-gap: 32px;
@@ -290,5 +306,19 @@ footer p {
   .card-header {
     grid-template-columns: 1fr;
     grid-gap: 5px;
+  }
+
+  .card-header img {
+    display: none;
+  }
+
+  iframe.embed {
+    aspect-ratio: 16 / 9;
+  }
+
+  .my-photos-grid {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5px;
+    aspect-ratio: 1 / 1;
   }
 }
