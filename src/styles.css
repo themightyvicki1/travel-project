@@ -115,8 +115,9 @@ table {
   padding: 15px;
   /*centers entire table */
   margin: 0 auto;
-  color: var(--blackish-color);
+  color: var(--whitish-color);
   text-align: left;
+  background-color: #2c786c;
 }
 
 table thead {
@@ -357,7 +358,7 @@ footer p {
   }
 
   table thead {
-    font-size: 14px;
+    font-size: 12px;
   }
 
   table tbody {
